@@ -1,5 +1,6 @@
 import 'package:doctor_app_design/components/loginForm.dart';
-import 'package:doctor_app_design/text.dart';
+import 'package:doctor_app_design/components/socialButton.dart';
+import 'package:doctor_app_design/utils/text.dart';
 import 'package:flutter/material.dart';
 
 import 'utils/config.dart';
@@ -51,7 +52,63 @@ class _LoginScreenState extends State<LoginScreen> {
                 )
               ],
             ),
-            LoginForm(),
+            Config.midiumSpace,
+            const LoginForm(),
+            Config.smallSpace,
+            Center(
+              child: Text(
+                Apptext.enText['forgotPassword_text']!,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Container(),
+            ),
+            Center(
+              child: Text(
+                Apptext.enText['socialLogin_text']!,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                  color: Colors.grey.shade500,
+                ),
+              ),
+            ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                SocialButton(social: 'facebook'),
+                SocialButton(social: 'google'),
+              ],
+            ),
+            Config.smallSpace,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  Apptext.enText['signUp_text']!,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.grey.shade500,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {},
+                  child: const Text(
+                    'Sign Up',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            )
           ],
         )),
       ),
