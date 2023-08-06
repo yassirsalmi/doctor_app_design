@@ -1,4 +1,5 @@
 import 'package:doctor_app_design/login.dart';
+import 'package:doctor_app_design/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const LoginScreen(),
+        '/': (context) => const Splach(),
+        'login': (context) => const LoginScreen(),
       },
     );
   }
