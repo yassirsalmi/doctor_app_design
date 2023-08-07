@@ -3,7 +3,7 @@ import 'package:doctor_app_design/components/socialButton.dart';
 import 'package:doctor_app_design/utils/text.dart';
 import 'package:flutter/material.dart';
 
-import 'utils/config.dart';
+import '../utils/config.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
