@@ -1,4 +1,7 @@
+import 'package:doctor_app_design/components/Category_row.dart';
 import 'package:doctor_app_design/components/personnal_header.dart';
+import 'package:doctor_app_design/components/top_doctors.dart';
+import 'package:doctor_app_design/utils/config.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,6 +26,18 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               PersonamHeader(),
+              Config.smallSpace,
+              Text(
+                'Category',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Config.smallSpace,
+              CategoryRow(),
+              Config.smallSpace,
+              TopDoctors(),
             ],
           ),
         ),
