@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../utils/config.dart';
+import '../../utils/config.dart';
 import 'button.dart';
 
 class LoginForm extends StatefulWidget {
@@ -70,7 +70,7 @@ class _LoginFormState extends State<LoginForm> {
             title: 'Sign In',
             disable: false,
             onPressed: () {
-              Navigator.pushReplacementNamed(context, 'home');
+              Navigator.pushReplacementNamed(context, 'main');
             },
           )
         ],

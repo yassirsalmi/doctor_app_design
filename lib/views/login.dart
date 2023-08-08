@@ -1,5 +1,5 @@
-import 'package:doctor_app_design/components/loginForm.dart';
-import 'package:doctor_app_design/components/socialButton.dart';
+import 'package:doctor_app_design/components/login_page_component/loginForm.dart';
+import 'package:doctor_app_design/components/login_page_component/socialButton.dart';
 import 'package:doctor_app_design/utils/text.dart';
 import 'package:flutter/material.dart';
 

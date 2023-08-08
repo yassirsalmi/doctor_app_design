@@ -1,8 +1,9 @@
-import 'package:doctor_app_design/components/Category_row.dart';
-import 'package:doctor_app_design/components/personnal_header.dart';
-import 'package:doctor_app_design/components/top_doctors.dart';
 import 'package:doctor_app_design/utils/config.dart';
 import 'package:flutter/material.dart';
+
+import '../components/home_page_component/Category_row.dart';
+import '../components/home_page_component/personnal_header.dart';
+import '../components/home_page_component/top_doctors.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,7 +14,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    Config().init(context);
     return const Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(

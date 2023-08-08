@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../utils/config.dart';
+import '../../utils/config.dart';
 
 class SocialButton extends StatelessWidget {
   const SocialButton({super.key, required this.social});
