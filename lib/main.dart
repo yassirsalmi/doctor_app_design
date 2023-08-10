@@ -3,6 +3,7 @@ import 'package:doctor_app_design/utils/config.dart';
 import 'package:doctor_app_design/views/home_page.dart';
 import 'package:doctor_app_design/views/login.dart';
 import 'package:doctor_app_design/splash.dart';
+import 'package:doctor_app_design/views/sign_up.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const Splach(),
         'login': (context) => const LoginScreen(),
+        'signup': (context) => const Signup(),
         'main': (context) => const MainLayout(),
         'home': (context) => const HomePage(),
       },

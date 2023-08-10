@@ -1,4 +1,4 @@
-import 'package:doctor_app_design/components/profile_component/bih_container.dart';
+import 'package:doctor_app_design/components/profile_component/big_container.dart';
 import 'package:doctor_app_design/components/profile_component/medium_container.dart';
 import 'package:doctor_app_design/components/profile_component/small_container.dart';
 import 'package:flutter/material.dart';
